@@ -9,7 +9,7 @@ class User{
   String title;
   bool completed;
 
-  User({required this.userId, required this.id, required this.title, required this.completed});
+  User({required this.userId,required this.id,required this.title,required this.completed});
 
   factory User.fromJson(Map<String, dynamic> json) => _$UserFromJson(json);
 
