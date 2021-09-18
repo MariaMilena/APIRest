@@ -9,10 +9,15 @@ Widget card(User user, Size size) {
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text("UserId: "+user.userId.toString()),
+        //Text("UserId: "+user.userId.toString()),
         Text("Id: "+user.id.toString()),
-        Text("Title: "+ user.title),
-        Icon(user.completed == true ? Icons.done : Icons.close),
+        Text("Name: "+user.name.toString()),
+        Text("Username: "+ user.username.toString()),
+        Text("Email: "+ user.email.toString()),
+        Text("Street: "+ user.address.street.toString()),
+        Text("Suite: "+ user.address.suite.toString()),
+        Text("City: "+ user.address.city.toString()),
+        //Icon(user.completed == true ? Icons.done : Icons.close),
       ],
     ),
   );
